@@ -1,0 +1,22 @@
+{
+    "name": "wbot",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "debug": "node index.js",
+        "start": "forever start --minUptime 1000 --spinSleepTime 1000 index.js",
+        "restart": "forever restart index.js",
+        "stop": "forever stop index.js",
+        "list": "forever list",
+        "logs": "forever logs",
+        "config": "forever config"
+    },
+    "keywords": [],
+    "author": "smpny7",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^12.2.0",
+        "dotenv": "^8.2.0"
+    }
+}
