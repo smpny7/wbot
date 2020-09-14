@@ -1,17 +1,11 @@
 {
     "name": "wbot",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "main": "index.js",
     "scripts": {
         "debug": "node index.js",
-        "build": "NODE_ENV=production & npm install",
-        "start": "forever start --minUptime 1000 --spinSleepTime 1000 index.js",
-        "restart": "forever restart index.js",
-        "stop": "forever stop index.js",
-        "list": "forever list",
-        "logs": "forever logs",
-        "config": "forever config"
+        "build": "NODE_ENV=production & npm install"
     },
     "keywords": [],
     "author": "smpny7",

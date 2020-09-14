@@ -1,0 +1,6 @@
+.editorconfig
+.env.sample
+.git
+.github
+.gitignore
+node_modules
