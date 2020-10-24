@@ -20,7 +20,7 @@ client.on('message', msg => {
         msg.channel.send('草');
     if (/おっ/.test(msg.content))
         msg.channel.send('おっ、ありがてぇ！おっ、ありがてぇ！おっ、ありがてぇ！おっ、ありがてぇおっ、ありがおっ、あrおっ、あおっ、あえいおっ、あえいがおっ、あえいおっ、あおっ、おltお');
-    if (/終/.test(msg.content) && (!/終わ/.test(msg.content) || !/終了/.test(msg.content)))
+    if (/^終$/.test(msg.content))
         msg.channel.send('制作・著作\n━━━━━\n　ⓃⒽⓀ');
 });
 
