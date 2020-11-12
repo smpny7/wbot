@@ -24,6 +24,8 @@ client.on('message', msg => {
         msg.channel.send('制作・著作\n━━━━━\n　ⓃⒽⓀ');
     if (/^sudo /.test(msg.content) || /^sudo$/.test(msg.content))
         msg.channel.send('あなたはシステム管理者から通常の講習を受けたはずです。\n    これは通常、以下の3点に要約されます:\n\n        #1) 他人のプライバシーを尊重すること。\n        #2) タイプする前に考えること。\n        #3) 大いなる力には大いなる責任が伴うこと。');
+    if (/素うどん/.test(msg.content))
+        msg.channel.send('■■■■■■■■■■■■■■■■■■■■■■■■■■■\n    ■■■■■■■■■3■■■■■■■■:\n\n        #1) ■■■■■■■■■■■■■■■■■\n        #2) ■■■■■■■■■■■■■n        #3) ■■■■■■■■■■■■■■■■■■■');
 });
 
 client.login(process.env.DISCORD_TOKEN);
