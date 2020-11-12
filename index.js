@@ -18,11 +18,13 @@ client.on('message', msg => {
         });
     else if (/草/.test(msg.content) && !/千草/.test(msg.content))
         msg.channel.send('草');
-    if (/おっ/.test(msg.content))
+    if (/ありがとう/.test(msg.content))
         msg.channel.send('おっ、ありがてぇ！おっ、ありがてぇ！おっ、ありがてぇ！おっ、ありがてぇおっ、ありがおっ、あrおっ、あおっ、あえいおっ、あえいがおっ、あえいおっ、あおっ、おltお');
+    if (/検索/.test(msg.content))
+        msg.channel.send('ばいんぐ');
     if (/^終$/.test(msg.content))
         msg.channel.send('制作・著作\n━━━━━\n　ⓃⒽⓀ');
-    if (/sudo /.test(msg.content) || /^sudo$/.test(msg.content) || /su /.test(msg.content) || /^su$/.test(msg.content))
+    if (/^sudo /.test(msg.content) || /^sudo$/.test(msg.content) || /^su /.test(msg.content) || /^su$/.test(msg.content))
         msg.channel.send('あなたはシステム管理者から通常の講習を受けたはずです。\n  これは通常、以下の3点に要約されます:\n\n      #1) 他人のプライバシーを尊重すること。\n      #2) タイプする前に考えること。\n      #3) 大いなる力には大いなる責任が伴うこと。');
     if (/素うどん/.test(msg.content))
         msg.channel.send('■■■■■■■■■■■■■■■■■■■■■■■■■■■\n    ■■■■■■■■■3■■■■■■■■:\n\n        #1) ■■■■■■■■■■■■■■■■■\n        #2) ■■■■■■■■■■■■■\n        #3) ■■■■■■■■■■■■■■■■■■■');
