@@ -6,7 +6,7 @@
     "scripts": {
         "debug": "node index.js",
         "build": "NODE_ENV=production & npm install",
-        "start": "NODE_ENV=production & npm install & forever start index.js"
+        "start": "NODE_ENV=production & npm install & node index.js"
     },
     "keywords": [],
     "author": "smpny7",
