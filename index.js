@@ -18,6 +18,12 @@ client.on('message', msg => {
         });
     else if (/草/.test(msg.content) && !/千草/.test(msg.content))
         msg.channel.send('草');
+    if (/ミュート/.test(msg.content))
+        msg.channel.send({
+            files: [
+                "./mute.jpg"
+            ]
+        });
     if (/ありがとう/.test(msg.content))
         msg.channel.send('おっ、ありがてぇ！おっ、ありがてぇ！おっ、ありがてぇ！おっ、ありがてぇおっ、ありがおっ、あrおっ、あおっ、あえいおっ、あえいがおっ、あえいおっ、あおっ、おltお');
     if (/検索/.test(msg.content))
