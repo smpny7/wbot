@@ -59,6 +59,12 @@ client.on('message', msg => {
                 break;
         }
     }
+    if (/ふざけ/.test(msg.content))
+        msg.channel.send({
+            files: [
+                "./silly.png"
+            ]
+        });
 });
 
 client.login(process.env.DISCORD_TOKEN);
