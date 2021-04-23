@@ -6,6 +6,8 @@ const client = new Client();
 require('dotenv').config();
 
 client.on('message', msg => {
+    const getRandomInt = max => Math.floor(Math.random() * max);
+
     if (msg.author.bot)
         return;
     if (/w\(\)/.test(msg.content) || /w \(\)/.test(msg.content))
@@ -36,6 +38,27 @@ client.on('message', msg => {
         msg.channel.send('■■■■■■■■■■■■■■■■■■■■■■■■■■■\n    ■■■■■■■■■3■■■■■■■■:\n\n        #1) ■■■■■■■■■■■■■■■■■\n        #2) ■■■■■■■■■■■■■\n        #3) ■■■■■■■■■■■■■■■■■■■');
     if (/1TB/.test(msg.content))
         msg.channel.send('行ってらっしゃい');
+    if (/腹痛/.test(msg.content)) {
+        const rand = getRandomInt(3);
+        switch (rand) {
+            case 0:
+                msg.channel.send('執行対象ではありません。');
+                msg.channel.send('トリガーをロックします。');
+                break;
+            case 1:
+                msg.channel.send('執行対象です。\n執行モード、ノンリーサル・パラライザー。');
+                msg.channel.send('落ち着いて照準を定め、対象を制圧して下さい。');
+                break;
+            case 2:
+                msg.channel.send('執行対象です。\nリーサル・エリミネーター。');
+                msg.channel.send('慎重に照準を定め、対象を排除して下さい。');
+                break;
+            case 3:
+                msg.channel.send('執行対象です。\nデストロイ・デコンポーザー。');
+                msg.channel.send('対象を完全排除します。\nご注意下さい。');
+                break;
+        }
+    }
 });
 
 client.login(process.env.DISCORD_TOKEN);
