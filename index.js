@@ -65,6 +65,8 @@ client.on('message', msg => {
                 "./silly.png"
             ]
         });
+    if (/.*し$/.test(msg.content))
+        msg.channel.send('ギャル');
 });
 
 client.login(process.env.DISCORD_TOKEN);
