@@ -67,6 +67,8 @@ client.on('message', msg => {
         });
     if (/.*し$/.test(msg.content))
         msg.channel.send('ギャル');
+    if (/^ping$/.test(msg.content))
+        msg.channel.send('1,000,000,000ms');
 });
 
 client.login(process.env.DISCORD_TOKEN);
